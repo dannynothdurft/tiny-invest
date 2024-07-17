@@ -1,0 +1,161 @@
+@import "./color.scss";
+@import "./viewports.scss";
+
+header {
+  border-radius: 8px;
+  box-shadow: 0 0 10px $base-color;
+  padding: 0 20px;
+  height: 50px;
+}
+
+.ti--navbar {
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.dn-navlogo {
+  display: flex;
+  align-items: center;
+  font-size: 1.3em;
+  color: #fff;
+  gap: 10px;
+
+  * {
+    font-family: "Salsa", sans-serif;
+  }
+
+  p {
+    display: none;
+
+    @media #{$mobileMax} {
+      display: block;
+    }
+  }
+}
+
+.dn-navcontain {
+  position: relative;
+
+  &.desktop {
+    gap: 40px;
+    display: none;
+
+    @media #{$max} {
+      display: flex;
+    }
+  }
+
+  &.mobile {
+    position: absolute;
+    flex-direction: column;
+    right: 0;
+    gap: 10px;
+    border-radius: 8px;
+    top: 60px;
+    background-color: rgba($color: #ffffff, $alpha: 0.95);
+    box-shadow: 0 8px 20px #4d6bdd33;
+    padding: 10px;
+    width: 100%;
+
+    @media #{$tablet} {
+      top: 75px;
+      width: max-content;
+    }
+
+    @media #{$max} {
+      display: none;
+    }
+  }
+}
+
+.dn-navlink {
+  display: flex;
+  gap: 15px;
+  padding: 5px 10px;
+  text-decoration: none;
+  letter-spacing: -0.02em;
+  font-family: "Salsa";
+  align-items: center;
+
+  &:hover {
+    color: var(--primary);
+    border-radius: 8px;
+    box-shadow: 0 8px 20px #4d6bdd33;
+  }
+
+  &.logo {
+    padding: 0;
+
+    &:hover {
+      box-shadow: unset;
+    }
+  }
+
+  &.active {
+    color: #16acab;
+  }
+}
+
+.dn-nav-button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+
+  .dn-nav-burger {
+    width: 30px;
+    height: 3px;
+    background: #000000;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    transition: all 0.5s ease-in-out;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      width: 35px;
+      height: 3px;
+      background: #000000;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+      transition: all 0.5s ease-in-out;
+    }
+
+    &::before {
+      transform: translateY(-10px);
+    }
+
+    &::after {
+      transform: translateY(10px);
+    }
+  }
+
+  &.open {
+    .dn-nav-burger {
+      background: transparent;
+      box-shadow: none;
+
+      &::before {
+        transform: rotate(45deg);
+      }
+
+      &::after {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+
+  @media #{$max} {
+    display: none;
+  }
+}

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "@/styles/globals.scss";
 
-import Navbar from "@/components/Navbar";
+import Navbar from "@/components/navbar";
 
 export const metadata: Metadata = {
   title: "Tiny Invest",
