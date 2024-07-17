@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+@import "./color.scss";
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 
 * {
@@ -62,5 +63,62 @@
     justify-content: center;
     max-width: 1200px;
     margin: 0 auto;
+  }
+}
+
+.ti--footer {
+  background-color: #edf6f5;
+  padding: 30px 40px 0;
+  -webkit-box-shadow: 2px 3px 15px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 2px 3px 15px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 3px 15px 0px rgba(0, 0, 0, 0.2);
+
+  .footer--container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    .col-item {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+
+      h3 {
+        font-size: 1.3em;
+        text-decoration: underline;
+      }
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+      }
+    }
+  }
+
+  .social--container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    a {
+      img {
+        width: 150px;
+      }
+    }
+
+    p {
+      font-size: 0.9em;
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 2px;
+    }
+  }
+
+  .ti-copyright {
+    border-top: 1px solid rgba(0, 0, 0);
+    margin-top: 15px;
+    padding: 15px;
+    text-align: center;
   }
 }

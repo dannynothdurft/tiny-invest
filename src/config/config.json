@@ -1,0 +1,36 @@
+{
+  "site": {
+    "title": "Tiny Invest",
+    "base_url": "/",
+    "favicon": "/images/favicon.ico",
+    "logo": "/logo.svg",
+    "logo_width": 200,
+    "logo_height": 48,
+    "logo_text": "Tiny Invest"
+  },
+
+  "settings": {
+    "pagination": 4,
+    "summary_length": 200,
+    "blog_folder": "blogs"
+  },
+
+  "nav_button": {
+    "enable": true,
+    "label": "Get Started",
+    "link": "/contact"
+  },
+
+  "params": {
+    "contact_form_action": "",
+    "tag_manager_id": "",
+    "footer_content": "Lorem ipsum dolor sit amet, consectetur elit. Consjat tristique eget amet, tempus eu at cttur.",
+    "copyright": "Copyright by Tiny Invest, All rights reserved "
+  },
+
+  "metadata": {
+    "meta_author": "Danny Nothdurft",
+    "meta_image": "",
+    "meta_description": "Ein Blog über Finanzen"
+  }
+}
