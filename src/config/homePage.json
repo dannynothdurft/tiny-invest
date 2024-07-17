@@ -1,0 +1,11 @@
+{
+    "banner": {
+        "title": "Werde zum Meister deiner Finanzen",
+        "content": "Entwickle die Fähigkeiten, deine Finanzen selbstbewusst zu verwalten, Risiken abzusichern, für die Zukunft vorzusorgen und klug zu investieren. Entdecke in nur wenigen Schritten die besten Finanzprodukte, die perfekt zu deinen Bedürfnissen passen.",
+        "image": "/images/banner-art.svg",
+        "button": {
+            "label": "Kontakt",
+            "link": "/contact"
+        }
+    }
+}

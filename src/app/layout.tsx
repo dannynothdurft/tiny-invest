@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import "@/styles/globals.css";
+import "@/styles/globals.scss";
 
 import Navbar from "@/components/Navbar";
 
@@ -17,7 +17,7 @@ export default function RootLayout({
     <html lang="de">
       <body>
         <Navbar />
-        {children}
+        <main>{children}</main>
       </body>
     </html>
   );
