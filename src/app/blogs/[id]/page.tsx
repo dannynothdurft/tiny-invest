@@ -35,11 +35,19 @@ const Page: FC<PageProps> = ({ params }) => {
   }, [params.id]);
 
   if (loading) {
-    return <div>Loading...</div>;
+    return (
+      <div className="ti--blog--container">
+        <div>Loading...</div>
+      </div>
+    );
   }
 
   if (!blog) {
-    return <div>Blog not found</div>;
+    return (
+      <div className="ti--blog--container">
+        <div>Blog nicht gefunden</div>
+      </div>
+    );
   }
 
   return (
