@@ -4,10 +4,18 @@
     "base_url": "/",
     "favicon": "/images/favicon.ico",
     "logo": "/logo.svg",
-    "logo_width": 200,
+    "logo_width": 150,
     "logo_height": 48,
     "logo_text": "Tiny Invest"
   },
+
+  "street": "Tribünenweg",
+  "streeNumber": "32",
+"plz": "22111",
+"city": "Hamburg",
+"email": "support@tiny-invest.de",
+"tel": "+49(0) 176 566 121 13",
+"ceo": "Danny Nothdurft",
 
   "settings": {
     "pagination": 4,
@@ -24,7 +32,7 @@
   "params": {
     "contact_form_action": "",
     "tag_manager_id": "",
-    "footer_content": "Lorem ipsum dolor sit amet, consectetur elit. Consjat tristique eget amet, tempus eu at cttur.",
+    "footer_content": "Werde zum Meister deiner Finanzen",
     "copyright": "Copyright by Tiny Invest, All rights reserved "
   },
 

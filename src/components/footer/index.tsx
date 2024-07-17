@@ -20,7 +20,11 @@ const Footer = () => {
               <ul>
                 {col?.menu.map((item) => (
                   <li key={item.text}>
-                    <Link href={item.url} rel="">
+                    <Link
+                      href={item.url}
+                      rel=""
+                      target={item.blank === "blank" ? "_blank" : "_self"}
+                    >
                       {item.text}
                     </Link>
                   </li>
