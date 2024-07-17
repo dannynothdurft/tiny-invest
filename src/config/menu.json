@@ -1,0 +1,49 @@
+{
+  "main": [
+    {
+      "name": "Blog",
+      "url": "/blogs"
+    },
+    {
+      "name": "Kontakt",
+      "url": "/contact"
+    }
+  ],
+  "footer": [
+    {
+      "name": "Tiny Invest",
+      "menu": [
+        {
+          "text": "Impressum",
+          "url": "#"
+        },
+        {
+          "text": "Datenschutz",
+          "url": "#"
+        }
+      ]
+    },
+    {
+      "name": "Produkte",
+      "menu": [
+        {
+          "text": "Vergleichsrechner",
+          "url": "#"
+        },
+        {
+          "text": "CryptoBook",
+          "url": "#"
+        }
+      ]
+    },
+    {
+      "name": "Support",
+      "menu": [
+        {
+          "text": "FAQ",
+          "url": "/faq"
+        }
+      ]
+    }
+  ]
+}

@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "@/styles/globals.css";
 
+import Navbar from "@/components/Navbar";
+
 export const metadata: Metadata = {
   title: "Tiny Invest",
   description: "Werde mit Tiny Invest zum Meister deiner Finanzen",
@@ -13,7 +15,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="de">
-      <body>{children}</body>
+      <body>
+        <Navbar />
+        {children}
+      </body>
     </html>
   );
 }
