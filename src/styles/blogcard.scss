@@ -1,0 +1,31 @@
+@import "./color.scss";
+@import "./viewports.scss";
+
+.blogcard--container {
+  max-width: 370px;
+  -webkit-box-shadow: 2px 3px 15px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 2px 3px 15px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 3px 15px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+
+  h5 {
+    font-weight: bold;
+    font-size: 1.3em;
+    color: rgba(0, 0, 0, 0.8);
+    line-height: 1.1em;
+    margin-bottom: 5px;
+  }
+
+  p {
+    color: #d0d0d0;
+    margin-bottom: 5px;
+  }
+
+  .card--info {
+    display: flex;
+    justify-content: space-between;
+    span {
+      font-size: 0.9em;
+    }
+  }
+}

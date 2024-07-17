@@ -24,10 +24,6 @@ header {
   color: #fff;
   gap: 10px;
 
-  * {
-    font-family: "Salsa", sans-serif;
-  }
-
   p {
     display: none;
 
@@ -78,7 +74,6 @@ header {
   padding: 5px 10px;
   text-decoration: none;
   letter-spacing: -0.02em;
-  font-family: "Salsa";
   align-items: center;
 
   &:hover {
