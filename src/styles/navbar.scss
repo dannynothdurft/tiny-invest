@@ -2,10 +2,17 @@
 @import "./viewports.scss";
 
 header {
-  border-radius: 8px;
-  box-shadow: 0 0 10px $base-color;
+  border-radius: 0 0 8px 8px;
   padding: 0 20px;
   height: 50px;
+  -webkit-box-shadow: 2px 3px 15px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 2px 3px 15px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 3px 15px 0px rgba(0, 0, 0, 0.2);
+  background-color: rgba($color: #ffffff, $alpha: 0.9);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 .ti--navbar {

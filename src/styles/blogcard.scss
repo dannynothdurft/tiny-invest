@@ -2,11 +2,13 @@
 @import "./viewports.scss";
 
 .blogcard--container {
-  max-width: 370px;
+  width: 100%;
   -webkit-box-shadow: 2px 3px 15px 0px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 2px 3px 15px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 2px 3px 15px 0px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
+  display: block;
+  transition: all 0.1s ease-in-out;
 
   h5 {
     font-weight: bold;
@@ -27,5 +29,9 @@
     span {
       font-size: 0.9em;
     }
+  }
+
+  &:hover {
+    transform: scale(1.02);
   }
 }

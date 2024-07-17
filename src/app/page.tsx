@@ -34,12 +34,18 @@ export default function HomePage() {
       </section>
 
       <section className="section--blogs">
-        <BlogCard />
-        <BlogCard />
-        <BlogCard />
-        <BlogCard />
-        <BlogCard />
-        <BlogCard />
+        <h2>Aktuelle Blogs</h2>
+        <div className="grid-temp">
+          <BlogCard />
+          <BlogCard />
+          <BlogCard />
+          <BlogCard />
+          <BlogCard />
+          <BlogCard />
+          <BlogCard />
+          <BlogCard />
+          <BlogCard />
+        </div>
       </section>
     </>
   );
