@@ -6,7 +6,7 @@ import Link from "next/link";
 
 function BlogCard() {
   return (
-    <Link href="#" className="blogcard--container">
+    <Link href="/blogs/block1" className="blogcard--container">
       <Image src="/images/banner-art.svg" alt="" width={1000} height={1000} />
       <div className="p-5">
         <h5>Noteworthy technology acquisitions 2021</h5>
