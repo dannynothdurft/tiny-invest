@@ -1,6 +1,8 @@
 "use client";
 import "@/styles/blogpage.scss";
 import React, { FC, useEffect, useState } from "react";
+import Script from "next/script";
+import Image from "next/image";
 
 interface PageProps {
   params: {
@@ -11,7 +13,10 @@ interface PageProps {
 interface Blog {
   id: string;
   title: string;
+  image: string;
   content: string;
+  c_id: string;
+  c_script: string;
 }
 
 const Page: FC<PageProps> = ({ params }) => {
@@ -53,7 +58,17 @@ const Page: FC<PageProps> = ({ params }) => {
   return (
     <div className="ti--blog--container">
       <h1>{blog.title}</h1>
-      <div>{blog.content}</div>
+      <Image
+        className="header--blog--image"
+        src={blog.image}
+        alt="blog.title"
+        width={1200}
+        height={350}
+      />
+      <div dangerouslySetInnerHTML={{ __html: blog.content }}></div>
+      <hr className="my-10" />
+      <div style={{ width: "100%" }} id={blog.c_id}></div>
+      <Script src={blog.c_script}></Script>
     </div>
   );
 };
