@@ -1,3 +1,4 @@
+import React, { FC } from "react";
 import {
   IoCall,
   IoGlobeOutline,
@@ -31,7 +32,12 @@ import {
   IoMail,
 } from "react-icons/io5";
 
-const Social = ({ source, className }) => {
+interface SocialProps {
+  source: any;
+  className?: string;
+}
+
+const Social: FC<SocialProps> = ({ source, className }) => {
   const {
     facebook,
     twitter,
