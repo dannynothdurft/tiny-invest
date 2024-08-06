@@ -12,12 +12,12 @@ export const DNavLogo = ({ src }: { src: string }) => {
     <div className="dn-navlogo">
       <Image
         src={src}
-        alt="Logo Danny Nothdurft"
+        alt="Logo Tiny Invest"
         width={200}
         height={50}
         priority={true}
         loading="eager"
-        title="Logo Danny Nothdurft"
+        title="Logo Tiny Invest"
       />
     </div>
   );
